@@ -147,42 +147,6 @@
         }
       }
     });
-// Inicializar EmailJS (coloca tu PUBLIC_KEY de tu cuenta)
-emailjs.init("TtMv7MjJsrpQNH2qr");
-
-// =============================
-// Envío de correo con EmailJS
-// =============================
-$('#contactForm').on('submit', function (e) {
-  e.preventDefault();
-
-  var nombre = $('#nombre').val();
-  var apellido = $('#apellido').val();
-  var telefono = $('#telefono').val();
-  var correo = $('#correo').val(); // <-- nuevo
-  var tipoConsulta = $('#tipoConsulta').val();
-  var mensaje = $('#mensaje').val();
-
-  var templateParams = {
-    from_name: nombre + " " + apellido,
-    from_email: correo,              // <-- importante
-    telefono: telefono,
-    tipo_consulta: tipoConsulta,
-    message: mensaje,
-    to_email: "consultoria.mvgroup@gmail.com" // este puedes dejarlo fijo
-  };
-
-  emailjs.send('service_oqs3ed6', 'template_e630pwh', templateParams)
-    .then(function (response) {
-      console.log('Correo enviado!', response.status, response.text);
-      $('#formResponse').html('<div class="alert alert-success">¡Mensaje enviado correctamente!</div>');
-      $('#contactForm')[0].reset();
-    }, function (error) {
-      console.log('Error al enviar', error);
-      $('#formResponse').html('<div class="alert alert-danger">Error al enviar el mensaje. Intenta de nuevo.</div>');
-    });
-});
-
 
   });
 
