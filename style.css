@@ -812,4 +812,130 @@ img.rounded.shadow {
   box-shadow: 0 4px 8px rgba(151, 150, 150, 0.3);
 }
 
+.empresa-titulo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.1;
+  display: inline-block;
+  position: relative;
+
+  /* 👇 Agrega este valor para separar del siguiente bloque */
+  margin-bottom: 45px; 
+
+  
+}
+
+#home {
+  padding-top: 20px; /* opcional: ajusta según lo necesites */
+}
+
+
+.mv-container {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+/* M firme y negra */
+.letra-m {
+  color: black;
+  font-weight: 800;
+  font-size: 80px;
+}
+
+/* V verde oscuro y un poco más pequeña */
+.letra-v {
+  position: relative;
+  color: #064e3b;
+  font-weight: 800;
+  font-size: 70px;
+  display: inline-block;
+}
+
+/* Flecha dorada hacia arriba */
+.letra-v .flecha {
+  position: absolute;
+  top: -22px;    /* SUBE/BAJA la flecha */
+  left: 10px;     /* Mueve la flecha */
+  color: rgb(196, 171, 29);
+  font-size: 32px;
+  transform: rotate(-10deg);
+  opacity: 0.95;
+}
+
+/* Símbolo de pesos dorado, elegante y alineado */
+.peso-icon {
+  position: absolute;
+  top: 25px;    /* Sube/Baja el símbolo de pesos */
+  right: -10px; /* Acerca/Aleja de la V */
+  font-size: 28px;
+  color: rgb(196, 171, 29);
+  font-weight: 700;
+  font-family: "Times New Roman", serif;
+  opacity: 0.95;
+}
+
+/* Consulting & Group colores */
+.consulting {
+  color: black;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.group {
+  color: #064e3b;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+
+/* Línea decorativa inferior */
+.empresa-titulo::after {
+  content: "";
+  width: 60%;
+  height: 3px;
+  background: #0C6B37; /* línea en verde oscuro */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  border-radius: 6px;
+}
+
+/* Fondo y sombra del formulario */
+.form-card {
+  background-color: #ffffff; /* blanco elegante */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Fondo y sombra de la foto */
+.profile-card {
+  background-color: #f8f9fa; /* gris claro */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Título del dueño */
+.profile-card p {
+  font-size: 1.2rem;
+}
+
+/* Pequeños ajustes responsive */
+@media (max-width: 992px) {
+  .profile-card img {
+    max-height: 250px;
+  }
+}
+
+/* Descripción del fundador */
+.founder-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #4b4b4b; /* gris elegante para no competir con el título */
+  margin-top: 10px;
+}
+
+
 

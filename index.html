@@ -14,6 +14,7 @@
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- CSS existente -->
   <link rel="stylesheet" type="text/css" href="css/vendor.css">
@@ -203,14 +204,14 @@
           </div>
           <ul class="list-unstyled d-flex justify-content-start flex-wrap gap-3">
             <li>
-              <a href="#" class="text-dark">
+              <a href="https://www.facebook.com/share/1DUdaWfrps/?mibextid=wwXIfr" class="text-dark">
                 <svg width="24" height="24" viewBox="0 0 24 24">
                   <use xlink:href="#facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="text-dark">
+              <a href="https://www.instagram.com/mv_consulting_group_?igsh=MWhmZnA3OHFkbXBpZw==" class="text-dark">
                 <svg width="24" height="24" viewBox="0 0 24 24">
                   <use xlink:href="#instagram"></use>
                 </svg>
@@ -228,9 +229,22 @@
     <div class="justify-content-center px-1 mx-1 px-xl-5 mx-xl-5">
 
   <!-- Inicio -->
-    <section id="home" class="my-5 py-5 bg-formal text-center">
+  <section id="home" class="bg-formal text-center">
       <div class="container" data-aos="fade-up">
-        <!-- Encabezado de bienvenida -->
+
+       <h1 class="empresa-titulo text-center mb-6" data-aos="fade-down">
+          <span class="mv-container">
+            <span class="letra-m">M</span>
+            <span class="letra-v">
+              V
+              <i class="fa-solid fa-arrow-trend-up flecha"></i>
+              <span class="peso-icon">$</span>
+            </span>
+          </span><br>
+          <span class="consulting">Consulting</span>
+          <span class="group">Group</span>
+        </h1>
+
         <h2 class="mb-3 fw-bold">Bienvenido a Nuestra Empresa</h2>
         <p class="lead text-muted mb-5">
           Nos dedicamos a impulsar tu crecimiento financiero con asesoría,
@@ -431,9 +445,11 @@
         </div>
       </section>
 
-   <!-- CONTACTO -->
-<section id="contact" class="my-5 py-5 bg-text" data-text="06">
+  <!-- CONTACTO -->
+<section id="contact" class="py-5 bg-text" data-text="06">
   <div class="container position-relative">
+
+    <!-- Título -->
     <div class="row justify-content-center mb-5">
       <div class="col-lg-8 text-center" data-aos="fade-up">
         <h2 class="display-4 txt-fx slide-up">Contacto</h2>
@@ -441,95 +457,105 @@
       </div>
     </div>
 
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
+    <!-- Formulario y Foto -->
+    <div class="row justify-content-center align-items-center">
 
-        <!-- FORMULARIO DE CONTACTO CON WEB3FORMS -->
-        <form action="https://api.web3forms.com/submit" method="POST">
+      <!-- Formulario -->
+      <div class="col-lg-6 mb-4" data-aos="fade-up">
+        <div class="form-card p-4 shadow rounded">
+          <form action="https://api.web3forms.com/submit" method="POST">
 
-          <!-- Access Key -->
-          <input type="hidden" name="access_key" value="bc93cf61-7f02-48dd-a070-d13ba5ef65de">
+            <input type="hidden" name="access_key" value="bc93cf61-7f02-48dd-a070-d13ba5ef65de">
 
-          <!-- Nombre y Apellido -->
-          <div class="row g-3 mb-3">
-            <div class="col-md-6">
-              <label for="nombre" class="form-label">Nombre</label>
-              <div class="input-group">
-                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fas fa-user"></i></span>
+                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="apellido" class="form-label">Apellido</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fas fa-user"></i></span>
+                  <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required>
+                </div>
               </div>
             </div>
 
-            <div class="col-md-6">
-              <label for="apellido" class="form-label">Apellido</label>
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo electrónico</label>
               <div class="input-group">
-                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required>
+                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
               </div>
             </div>
-          </div>
 
-          <!-- Correo -->
-          <div class="mb-3">
-            <label for="correo" class="form-label">Correo electrónico</label>
-            <div class="input-group">
-              <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-              <input type="email" class="form-control" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Número de teléfono</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Número de teléfono" required>
+              </div>
             </div>
-          </div>
 
-          <!-- Teléfono -->
-          <div class="mb-3">
-            <label for="telefono" class="form-label">Número de teléfono</label>
-            <div class="input-group">
-              <span class="input-group-text"><i class="fas fa-phone"></i></span>
-              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Número de teléfono" required>
+            <div class="mb-3">
+              <label for="tipoConsulta" class="form-label">Tipo de consulta</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-question-circle"></i></span>
+                <select class="form-select" id="tipoConsulta" name="tipoConsulta" required>
+                  <option value="">Selecciona</option>
+                  <option value="finanzas">Finanzas</option>
+                  <option value="inversiones">Inversiones</option>
+                  <option value="pensiones">Pensiones</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
             </div>
-          </div>
 
-          <!-- Tipo de consulta -->
-          <div class="mb-3">
-            <label for="tipoConsulta" class="form-label">Tipo de consulta</label>
-            <div class="input-group">
-              <span class="input-group-text"><i class="fas fa-question-circle"></i></span>
-              <select class="form-select" id="tipoConsulta" name="tipoConsulta" required>
-                <option value="">Selecciona</option>
-                <option value="finanzas">Finanzas</option>
-                <option value="inversiones">Inversiones</option>
-                <option value="pensiones">Pensiones</option>
-                <option value="otro">Otro</option>
-              </select>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-comment"></i></span>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Mensaje"></textarea>
+              </div>
             </div>
-          </div>
 
-          <!-- Mensaje -->
-          <div class="mb-3">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <div class="input-group">
-              <span class="input-group-text"><i class="fas fa-comment"></i></span>
-              <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Mensaje"></textarea>
-            </div>
-          </div>
+            <button type="submit" class="btn btn-primary w-100 mb-2 btn-animated">
+              <i class="fas fa-paper-plane me-2"></i> Enviar
+            </button>
 
-          <!-- Botón Enviar -->
-          <button type="submit" class="btn btn-primary w-100 mb-2 btn-animated">
-            <i class="fas fa-paper-plane me-2"></i> Enviar
-          </button>
+            <a href="https://wa.me/5216182675306?text=Hola,%20quiero%20información" 
+               target="_blank" 
+               class="btn btn-success w-100 btn-animated">
+              <i class="fab fa-whatsapp me-2"></i> WhatsApp
+            </a>
 
-          <!-- WhatsApp -->
-          <a href="https://wa.me/5216182675306?text=Hola,%20quiero%20información" 
-            target="_blank" 
-            class="btn btn-success w-100 btn-animated">
-            <i class="fab fa-whatsapp me-2"></i> WhatsApp
-          </a>
-        </form>
-
-        <div id="formResponse" class="mt-3 text-center"></div>
+          </form>
+        </div>
       </div>
+
+      <!-- Foto del dueño -->
+      <div class="col-lg-4 text-center mb-4" data-aos="fade-up">
+        <div class="profile-card p-3 shadow rounded">
+          <img src="images/Dueño.png" alt="Dueño de la empresa" class="img-fluid rounded-circle" style="max-height: 300px;">
+          <p class="mt-3 fw-bold mb-1">Marco Velarde</p>
+          <span class="text-muted mb-2 d-block">Fundador</span>
+          <p class="text-muted founder-desc">
+            Licenciado en Administración y Gestión Empresarial, con experiencia en finanzas, inversiones y asesoría patrimonial de pensiones. Certificado en finanzas, ayuda a sus clientes a construir un futuro económico seguro.
+          </p>
+
+        </div>
+      </div>
+
     </div>
+
+    <div id="formResponse" class="mt-3 text-center"></div>
+
   </div>
 </section>
-
 
 
 
